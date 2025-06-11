@@ -1,0 +1,70 @@
+
+.buttons
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 3
+  padding-top: 7px
+  a
+    padding: 5px 10px
+    border: 1px dashed grey
+    color: grey
+    text-align: center
+    font-size: 25px
+    text-decoration: none
+    cursor: pointer
+    transition: all .3s linear
+    background-color: transparent
+    &:hover
+      background-color: grey
+      color: white
+
+
+.wrapper
+  -webkit-tap-highlight-color: transparent
+  overscroll-behavior: none
+  width: 100% // prod
+  width: 50%
+  height: 100%
+  img
+    max-width: 100%
+    height: auto
+.reg
+  position: relative
+  height: calc(var(--vh, 1vh) * 100)
+  width: 100%
+  overflow: hidden
+
+  background: url("../img/bg-960.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1440px)
+    background: url("../img/bg-720.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1280px)
+    background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1260px)
+    background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
+  &__text
+
+  &__sam
+    position: absolute
+    bottom: -45px
+    right: -133px
+    left: 3px
+    width: 115%
+    img
+      position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: -65px
+      left: -366px
+      width: 2182px
+      height: 1210px
+      // width: 198%
+      // height: 150%
+      background: url('../img/back-960.png')
+
+@media screen and (max-width: 1023px)
+  .wrapper
+    display: none
+  .Layout_column__3MM83
+    width: 100%
